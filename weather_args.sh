@@ -18,7 +18,7 @@ echo -e "$cal"
 # keep while loop running for weather update
 while true
 do
-  weather=$(curl -s http://wttr.in/$1?format=$2)
+  weather=$(curl -s http://wttr.in/$city?format=$format)
   echo "$weather"
-  sleep $3
+  sleep $refresh
 done
