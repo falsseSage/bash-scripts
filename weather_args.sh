@@ -19,6 +19,6 @@ echo -e "$cal"
 while true
 do
   weather=$(curl -s http://wttr.in/$city?format=$format)
-  echo "$weather"
+  echo "Current Weather -- $weather:"
   sleep $refresh
 done
