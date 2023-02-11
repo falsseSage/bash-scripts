@@ -4,7 +4,7 @@
 
 city=$1
 format=$2
-refresh=$3
+# refresh=$3
 
 echo -e "Welcome back, $USER!"
 
@@ -20,5 +20,5 @@ while true
 do
   weather=$(curl -s http://wttr.in/$1?format=$2)
   echo "$weather"
-  sleep $3
+  sleep 10
 done
